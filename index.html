@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Zach's personal website — projects, ideas, and a little about me.">
-  <meta name="color-scheme" content="light">
-  <title>Zach | Personal Website</title>
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Zachary Bardusch — Rutgers Business School Leadership and Management student. Explore skills, projects, and customer service experience.">
+<title>Zachary Bardusch | Business Portfolio</title>
+<style>
     :root { --ink:#182725; --muted:#53645f; --paper:#f7f8f2; --accent:#265c48; --line:#d8e0d4; }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
@@ -47,48 +46,104 @@
     footer { padding:30px 0; font-size:13px; color:var(--muted); display:flex; justify-content:space-between; gap:20px; }
     @media(max-width:700px) { nav { min-height:76px; } .links { gap:16px; } .hero { grid-template-columns:1fr; padding:64px 0; gap:35px; } h1 { letter-spacing:-2px; } .art { width:210px; justify-self:center; } .cards { grid-template-columns:1fr; } section { padding:45px 0; } .section-head { display:block; } footer { flex-direction:column; gap:5px; } }
     @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
-  </style>
+  
+    .hero { grid-template-columns:1.7fr 1fr; }
+    h1 { font-size:clamp(45px,6.5vw,76px); letter-spacing:-3px; }
+    .tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
+    .tag { font-size:12px; border:1px solid var(--line); border-radius:30px; padding:5px 10px; color:var(--accent); }
+    .card a { display:inline-block; margin-top:22px; font-size:14px; font-weight:700; }
+    .card ul { padding-left:18px; color:var(--muted); font-size:15px; }
+    .education { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+    .experience { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .meta { color:var(--accent); font-size:13px; }
+    details { border:1px solid var(--line); background:white; border-radius:10px; margin:16px 0; padding:24px; scroll-margin-top:24px; }
+    summary { cursor:pointer; font-size:19px; font-weight:700; }
+    details p, details li { color:var(--muted); }
+    .case-label { font-size:12px; text-transform:uppercase; letter-spacing:1px; color:var(--accent); }
+    .contact a { display:inline-block; margin-right:24px; margin-top:10px; }
+    @media(max-width:700px) { .hero,.education,.experience { grid-template-columns:1fr; } h1 { letter-spacing:-2px; } }
+</style>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header>
-    <nav class="wrap" aria-label="Main navigation">
-      <a class="brand" href="#">Zach<span>.</span></a>
-      <div class="links"><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a></div>
-    </nav>
-  </header>
+  <header><nav class="wrap" aria-label="Main navigation">
+    <a class="brand" href="#">ZB<span>.</span></a>
+    <div class="links"><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+  </nav></header>
   <main id="main" class="wrap">
     <div class="hero">
-      <div>
-        <div class="eyebrow">My corner of the internet</div>
-        <h1>Hi, I'm Zach.<br>Welcome in.</h1>
-        <p class="intro">A place for my projects, ideas, and things I'm learning along the way.</p>
-        <a class="button" href="#projects">Explore my projects &rarr;</a>
+      <div><div class="eyebrow">Zachary Bardusch / Personal portfolio</div>
+        <h1>People first.<br>Business minded.</h1>
+        <p class="intro">I’m Zachary Bardusch, a Rutgers Business School student studying Leadership and Management who brings customer service experience, sales knowledge, and certified Excel skills to collaborative business teams.</p>
+        <a class="button" href="#projects">Explore my work &rarr;</a>
       </div>
-      <div class="art" aria-hidden="true"><span>Z.</span></div>
+      <div class="art" aria-hidden="true"><span>ZB.</span></div>
     </div>
-    <section id="projects" aria-labelledby="projects-title">
-      <div class="section-head"><h2 id="projects-title">Selected projects</h2><span class="eyebrow">A work in progress</span></div>
-      <!-- Replace these starter cards with your project names, descriptions, and links. -->
-      <div class="cards">
-        <article class="card"><span class="number">01 / PROJECT</span><h3>My first project</h3><p>Add a description of something you built, researched, or created. Explain what it does and what you learned.</p></article>
-        <article class="card"><span class="number">02 / PROJECT</span><h3>Something I'm learning</h3><p>Share a class project, a new skill, or an experiment you're working on.</p></article>
-        <article class="card"><span class="number">03 / PROJECT</span><h3>What's next</h3><p>Use this space for your next idea. Every great project starts somewhere.</p></article>
-      </div>
-    </section>
     <section id="about" aria-labelledby="about-title">
-      <div class="eyebrow">A little introduction</div>
-      <h2 id="about-title">About me</h2>
-      <!-- Customize this paragraph with your background and interests. -->
-      <p class="about">I'm Zach, and this is my personal website. I'll use this space to share my work, document what I'm learning, and explore new ideas. Thanks for stopping by!</p>
+      <div class="eyebrow">Education &amp; direction</div><h2 id="about-title">Building a foundation in business</h2>
+      <div class="education"><div>
+        <h3>Rutgers Business School</h3>
+        <p class="meta">New Brunswick, NJ · Expected graduation: December 2027</p>
+        <p>Bachelor of Science in Leadership and Management<br><strong>GPA: 3.8 / 4.0</strong><br>Dean’s List: first year and Fall 2024</p>
+      </div><div>
+        <p>My interests center on leadership, sales, and helping teams deliver a positive customer experience. Working in retail and food service has taught me to listen carefully, adapt quickly, and follow through on the details.</p>
+        <p><strong>Relevant coursework:</strong> Financial Accounting, Managerial Accounting, Statistics for Business, and Computer Applications for Business.</p>
+        <p>Outside of work and school, I enjoy soccer, MMA, cooking, and travel.</p>
+      </div></div>
     </section>
-    <section id="contact" aria-labelledby="contact-title">
-      <div class="contact"><div class="eyebrow">Let's connect</div><h2 id="contact-title">Get in touch</h2>
-        <!-- Replace this text with your email address or GitHub profile link. -->
-        <p>Add your email address or a link to your GitHub profile here so visitors can reach you.</p>
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="eyebrow">What I bring to a team</div><h2 id="skills-title">Skills &amp; strengths</h2>
+      <div class="cards">
+        <article class="card"><span class="number">01 / BUSINESS TOOLS</span><h3>Excel &amp; business fundamentals</h3><ul><li>Microsoft Office Specialist: Excel Associate</li><li>Financial and managerial accounting coursework</li><li>Statistics for Business coursework</li><li>Accurate cash handling and end-of-day accountability</li></ul></article>
+        <article class="card"><span class="number">02 / CUSTOMER EXPERIENCE</span><h3>Sales &amp; communication</h3><ul><li>Product recommendations based on needs and budget</li><li>Clear explanations of technical product information</li><li>In-person and telephone order taking</li><li>Responsive customer service</li></ul></article>
+        <article class="card"><span class="number">03 / TEAM OPERATIONS</span><h3>Collaboration &amp; reliability</h3><ul><li>Support across multiple staff roles</li><li>Adaptability during short-staffed shifts</li><li>Fast learning of products and procedures</li><li>Dependable attendance and attention to detail</li></ul></article>
       </div>
     </section>
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="eyebrow">Selected work</div><h2 id="projects-title">Projects &amp; applied case studies</h2>
+      <p>One website project and two case studies connecting my work experience to business practice.</p>
+      <div class="cards">
+        <article class="card"><span class="number">01 / WEBSITE PROJECT</span><h3>Personal portfolio website</h3><p>A responsive portfolio that presents my education, skills, and experience in an accessible format for potential employers.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">GitHub Pages</span></div><a href="#portfolio-case">Read project overview &rarr;</a></article>
+        <article class="card"><span class="number">02 / WORK-BASED CASE STUDY</span><h3>Needs-based retail sales</h3><p>A practical framework for helping pool and spa customers compare products, understand maintenance needs, and make choices within their budget.</p><div class="tags"><span class="tag">Sales</span><span class="tag">Customer education</span></div><a href="#sales-case">Read case study &rarr;</a></article>
+        <article class="card"><span class="number">03 / WORK-BASED CASE STUDY</span><h3>Restaurant team coordination</h3><p>An examination of how flexible staff support and clear priorities can keep customer service moving during a short-staffed restaurant shift.</p><div class="tags"><span class="tag">Teamwork</span><span class="tag">Operations</span></div><a href="#restaurant-case">Read case study &rarr;</a></article>
+      </div>
+      <details id="portfolio-case" open><summary>Personal portfolio website — project overview</summary>
+        <p><strong>Goal:</strong> Create a professional online introduction that makes my qualifications easy to find.</p>
+        <p><strong>Approach:</strong> Organize the site into education, skills, projects, experience, and contact sections; use responsive layouts, readable typography, keyboard-friendly navigation, and descriptive links.</p>
+        <p><strong>Deliverable:</strong> A single HTML file with embedded CSS, prepared for publishing through a public GitHub Pages repository.</p>
+        <p><a href="https://github.com/Zach9090/zlb10.github.io">View the project repository</a></p>
+      </details>
+      <details id="sales-case" open><summary>Needs-based retail sales — case study</summary>
+        <p class="case-label">Reflection and proposed framework based on Todd Harris Co. Inc experience</p>
+        <p><strong>Context:</strong> As a sales associate, I helped customers select pool and spa products based on budget and needs, explained maintenance and filtration, and performed water tests.</p>
+        <p><strong>Business question:</strong> How can a sales associate make technical product choices clearer for customers?</p>
+        <ol><li><strong>Understand the need:</strong> Ask about the customer’s equipment, maintenance concern, and budget before recommending a product.</li><li><strong>Explain the options:</strong> Compare relevant choices in plain language and connect each recommendation to the customer’s stated needs.</li><li><strong>Confirm understanding:</strong> Review the next steps and invite questions so the customer leaves with a clear plan.</li></ol>
+        <p><strong>Takeaway:</strong> Product knowledge becomes more useful when paired with listening and clear communication. A useful future measure would be repeat questions or returns caused by misunderstanding a recommendation.</p>
+        <p><strong>Experience reference:</strong> Todd Harris Co. Inc, Sales Associate, June 2024–August 2025; see the experience section below. This case study proposes a framework and does not claim measured sales improvements.</p>
+      </details>
+      <details id="restaurant-case" open><summary>Restaurant team coordination — case study</summary>
+        <p class="case-label">Reflection and proposed framework based on Tony’s Pizza &amp; Restaurant experience</p>
+        <p><strong>Context:</strong> My busboy role included clearing tables, washing dishes, delivering food, refilling drinks, responding to requests, and taking orders. I supported two waitresses during short-staffed service and collaborated with a team of ten other workers.</p>
+        <p><strong>Business question:</strong> How can team members coordinate competing tasks while maintaining a welcoming dining environment?</p>
+        <ol><li><strong>Identify immediate needs:</strong> Notice waiting customers, ready food, and tables that need clearing.</li><li><strong>Communicate priorities:</strong> Coordinate with waitstaff before switching tasks to reduce missed requests and duplicate effort.</li><li><strong>Support across roles:</strong> Use an understanding of coworkers’ responsibilities to help where demand is greatest.</li></ol>
+        <p><strong>Takeaway:</strong> Reliable operations depend on shared awareness and flexible support. A useful future measure would be the time between a customer leaving and the table being ready for the next guest.</p>
+        <p><strong>Experience reference:</strong> Tony’s Pizza &amp; Restaurant, Busboy, January 2021–December 2024; see the experience section below. This case study proposes an approach and does not claim a formally implemented improvement project.</p>
+      </details>
+    </section>
+    <section id="experience" aria-labelledby="experience-title">
+      <div class="eyebrow">Experience in practice</div><h2 id="experience-title">Professional experience</h2>
+      <div class="experience">
+        <article class="card"><h3>Sales Associate</h3><p class="meta">Todd Harris Co. Inc · Edison, NJ<br>June 2024–August 2025</p><ul><li>Helped customers choose from hundreds of pool and spa products based on budget and needs.</li><li>Explained pool maintenance, water chemistry, and filtration systems; performed hundreds of water tests.</li><li>Handled cash accurately and supported daily register accountability.</li></ul></article>
+        <article class="card"><h3>Busboy</h3><p class="meta">Tony’s Pizza &amp; Restaurant · New Brunswick, NJ<br>January 2021–December 2024</p><ul><li>Maintained a welcoming dining environment through efficient table clearing and dishwashing.</li><li>Supported waitstaff with food delivery, drink refills, and customer requests during short-staffed shifts.</li><li>Took orders in person and by phone and collaborated across a team of ten other workers.</li></ul></article>
+      </div>
+    </section>
+    <section id="contact" aria-labelledby="contact-title"><div class="contact">
+      <div class="eyebrow">Start a conversation</div><h2 id="contact-title">Let’s connect</h2>
+      <p>I’m interested in opportunities to develop my leadership, sales, and business skills while contributing to a collaborative team.</p>
+      <a href="mailto:zlb10@scarletmail.rutgers.edu">Email me</a><a href="https://www.linkedin.com/in/zach-b-007792350/">LinkedIn profile</a><a href="https://github.com/Zach9090">GitHub profile</a>
+    </div></section>
   </main>
-  <footer class="wrap"><span>&copy; 2026 Zach. Built with curiosity.</span><a href="#">Back to top &uarr;</a></footer>
+  <footer class="wrap"><span>&copy; 2026 Zachary Bardusch</span><a href="#">Back to top &uarr;</a></footer>
+
 </body>
 </html>
